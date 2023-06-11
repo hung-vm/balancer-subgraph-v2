@@ -35,6 +35,7 @@ class AddressByNetwork {
   public gnosis: string;
   public bnb: string;
   public dev: string;
+  public defiverse: string;
 }
 
 let network: string = dataSource.network();
@@ -47,6 +48,7 @@ let vaultAddressByNetwork: AddressByNetwork = {
   gnosis: '0xBA12222222228d8Ba445958a75a0704d566BF2C8',
   bnb: '0xBA12222222228d8Ba445958a75a0704d566BF2C8',
   dev: '0xa0B05b20e511B1612E908dFCeE0E407E22B76028',
+  defiverse: '0xef570b45a20e9bDe7855BDF5940Be3ac17B4c610',
 };
 
 function forNetwork(addressByNetwork: AddressByNetwork, network: string): Address {
@@ -62,6 +64,8 @@ function forNetwork(addressByNetwork: AddressByNetwork, network: string): Addres
     return Address.fromString(addressByNetwork.bnb);
   } else if (network == 'bsc') {
     return Address.fromString(addressByNetwork.bnb);
+  } else if (network == 'defiverse') {
+    return Address.fromString(addressByNetwork.defiverse);
   } else {
     return Address.fromString(addressByNetwork.dev);
   }

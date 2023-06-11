@@ -409,3 +409,17 @@ gnosis:
   TempLiquidityBootstrappingPoolFactory:
     address: "0x85a80afee867aDf27B50BdB7b76DA70f1E853062"
     startBlock: 25415236
+defiverse:
+  network: defiverse
+  EventEmitter:
+    address: "0x58530C4eC9CED16371e12e53f2E37c3E3F3e1a6b"
+    startBlock: 10
+  Vault:
+    address: "0xef570b45a20e9bDe7855BDF5940Be3ac17B4c610"
+    startBlock: 700
+  WeightedPoolV3Factory:
+    address: "0x8c96Ab92be9a17F6DB66bB254c31DD0C263eA81A"
+    startBlock: 700
+  ComposableStablePoolV3Factory:
+    address: "0x42DD917a3C8A14a766712Fabe7B048f0306246F6"
+    startBlock: 700
