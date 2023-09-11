@@ -9,9 +9,14 @@
     "test": "jest ./test/*.test.ts",
     "deploy": "graph deploy balancer-labs/balancer-v2 --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
     "deploy:local": "graph deploy balancer-labs/balancer-v2 subgraph.dockerParity.yaml --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020",
-    "create:defiverse": "graph create balancer-labs/defiverse --debug --node http://18.140.231.184:8020",
-    "deploy:defiverse": "graph deploy balancer-labs/defiverse subgraph.defiverse.yaml --debug --ipfs http://18.140.231.184:5001 --node http://18.140.231.184:8020",
-    "remove:defiverse": "graph remove balancer-labs/defiverse subgraph.defiverse.yaml --debug --node http://18.140.231.184:8020",
+
+    "create:defiverse": "graph create balancer-labs/defiverse --debug --node http://13.212.29.220:8020",
+    "deploy:defiverse": "graph deploy balancer-labs/defiverse subgraph.defiverse.yaml --debug --ipfs http://13.212.29.220:5001 --node http://13.212.29.220:8020",
+    "remove:defiverse": "graph remove balancer-labs/defiverse subgraph.defiverse.yaml --debug --node http://13.212.29.220:8020",
+
+    "create:defiverse_testnet": "graph create balancer-labs/defiverse-testnet --debug --node http://13.250.65.26:8020",
+    "deploy:defiverse_testnet": "graph deploy balancer-labs/defiverse-testnet subgraph.defiverse_testnet.yaml --debug --ipfs http://13.250.65.26:5001 --node http://13.250.65.26:8020",
+    "remove:defiverse_testnet": "graph remove balancer-labs/defiverse-testnet subgraph.defiverse_testnet.yaml --debug --node http://13.250.65.26:8020",
     "import-abis": "ts-node ./scripts/update-abis.ts",
     "generate-assets": "ts-node ./scripts/generate-assets",
     "generate-manifests": "ts-node ./scripts/generate-manifests",
@@ -19,7 +24,9 @@
     "update-addresses:goerli": "yarn update-addresses goerli",
     "update-addresses:local": "yarn update-addresses dockerParity",
     "update-addresses:defiverse": "yarn update-addresses defiverse",
+    "update-addresses:defiverse_testnet": "yarn update-addresses defiverse_testnet",
     "sync": "yarn import-abis && yarn update-addresses:defiverse && yarn codegen && yarn build",
+    "sync:defiverse_testnet": "yarn import-abis && yarn update-addresses:defiverse_testnet && yarn codegen && yarn build",
     "sync:local": "yarn import-abis && yarn update-addresses dockerParity && yarn codegen && yarn build"
   },
   "devDependencies": {
