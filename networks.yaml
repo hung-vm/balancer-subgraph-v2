@@ -424,13 +424,16 @@ defiverse:
     address: "0x42DD917a3C8A14a766712Fabe7B048f0306246F6"
     startBlock: 700
 defiverse_testnet:
-  network: defiverse_testnet  
+  network: defiverse_testnet
+  EventEmitter:
+    address: "0x4C7Be8e1Be27f5bb46775F9859ecF6DC03C1f922"
+    startBlock: 9742
   Vault:
-    address: "0x3fb170D197FFA0e79F758d0730efaC41807E4852"
-    startBlock: 8000
+    address: "0xa6935aBb1D57e8BA6fa2663f9d067777CA712ECd"
+    startBlock: 9742
   WeightedPoolV3Factory:
-    address: "0x44260fC3bdEB0cc16646D04cE93780E0fF40Bf60"
-    startBlock: 8000
+    address: "0xA557d50933deAA3F9b0bbAe1b7eF40D889434EB2"
+    startBlock: 9751
   ComposableStablePoolV3Factory:
-    address: "0x2d9E1970f6E3801E6808ad9d15DACdc3fe34CC4f"
-    startBlock: 8000
+    address: "0x5Fb8142cF2D5283D56241bdfB676e05A6AF99724"
+    startBlock: 9752

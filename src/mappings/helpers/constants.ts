@@ -35,8 +35,8 @@ class AddressByNetwork {
   public gnosis: string;
   public bnb: string;
   public dev: string;
-  public defiverse: string;  
-  public defiverse_testnet: string;  
+  public defiverse: string;
+  public defiverse_testnet: string;
 }
 
 let network: string = dataSource.network();
@@ -48,10 +48,10 @@ let vaultAddressByNetwork: AddressByNetwork = {
   arbitrum: '0xBA12222222228d8Ba445958a75a0704d566BF2C8',
   gnosis: '0xBA12222222228d8Ba445958a75a0704d566BF2C8',
   bnb: '0xBA12222222228d8Ba445958a75a0704d566BF2C8',
-  dev: '0xa0B05b20e511B1612E908dFCeE0E407E22B76028',  
+  dev: '0xa0B05b20e511B1612E908dFCeE0E407E22B76028',
   defiverse: '0xef570b45a20e9bDe7855BDF5940Be3ac17B4c610',
-  defiverse_testnet: '0x3fb170D197FFA0e79F758d0730efaC41807E4852',
-}
+  defiverse_testnet: '0xa6935aBb1D57e8BA6fa2663f9d067777CA712ECd',
+};
 
 function forNetwork(addressByNetwork: AddressByNetwork, network: string): Address {
   if (network == 'mainnet') {
