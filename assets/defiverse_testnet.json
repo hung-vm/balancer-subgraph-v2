@@ -1,15 +1,54 @@
 {
-    "stableAssets": [      
-    ],
-    "pricingAssets": [
-      {
-        "address": "0x6B382742b07AAbBA58c38d792B5d7CBAaB246e99",
-        "symbol": "WETH"
-      },
-      {
-        "address": "0x4E7b1B5b8F8A4DFd920f88a7307b72a76f6Ae587",
-        "symbol": "DFV"
-      }
-    ]
-  }
-  
+  "stableAssets": [
+    {
+      "address": "0x9C9a2a20e96eAae6dF4ae3C7d8CD1a65Fe7D0F18",
+      "symbol": "USDC"
+    },
+    {
+      "address": "0x66b8e41F428A9a7DbC7595b11d54462Be1A454Cb",
+      "symbol": "USDT"
+    }
+  ],
+  "pricingAssets": [
+    {
+      "address": "0x6B382742b07AAbBA58c38d792B5d7CBAaB246e99",
+      "symbol": "WOAS"
+    },
+    {
+      "address": "0xe34Eec955bF457382cE37e1D8371e559cC6518Fb",
+      "symbol": "GDT"
+    },
+    {
+      "address": "0x668B5Cf2f13AE8bFb5619E48f2091040b6985d5c",
+      "symbol": "ETH"
+    },
+    {
+      "address": "0x19f01c4794599B36541B6F1f45dB1d0BB7F52Ff7",
+      "symbol": "WBTC"
+    },    
+    {
+      "address": "0x3Fde6489AA398BcddaB46f971e4BB5364ccCD78B",
+      "symbol": "CCP"
+    },
+    {
+      "address": "0xDBe41f8c9731D9C473CcA30A203F7dd530D71020",
+      "symbol": "bCCP"
+    },
+    {
+      "address": "0xDa615b699920f07474a12168282dF3AC229A8e1E",
+      "symbol": "MCHC"
+    },
+    {
+      "address": "0x99b88cbF947Ce0d75dA00f271e52eb82EbfA68dD",
+      "symbol": "TCGC"
+    },
+    {
+      "address": "0x316cafe8f949378d440A92A65d5C0277b54fD193",
+      "symbol": "RAG"
+    },
+    {
+      "address": "0x56e6E92558D753983951b9241b9dB8c797B50A9c",
+      "symbol": "WRLP"
+    }
+  ]
+}

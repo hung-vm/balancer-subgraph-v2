@@ -37,6 +37,8 @@ class AddressByNetwork {
   public dev: string;
   public defiverse: string;
   public defiverse_testnet: string;
+  public oasys: string;
+  public oasys_testnet: string;
 }
 
 let network: string = dataSource.network();
@@ -49,8 +51,10 @@ let vaultAddressByNetwork: AddressByNetwork = {
   gnosis: '0xBA12222222228d8Ba445958a75a0704d566BF2C8',
   bnb: '0xBA12222222228d8Ba445958a75a0704d566BF2C8',
   dev: '0xa0B05b20e511B1612E908dFCeE0E407E22B76028',
-  defiverse: '0xef570b45a20e9bDe7855BDF5940Be3ac17B4c610',
-  defiverse_testnet: '0xa6935aBb1D57e8BA6fa2663f9d067777CA712ECd',
+  defiverse: '0x2FA699664752B34E90A414A42D62D7A8b2702B85',
+  defiverse_testnet: '0x2Da016a77E290fb82F5af7051198304d57779f5d',
+  oasys_testnet: '0x1f7a0Bea1CB70FaA0f6b7B1126eCbd01Ef4E5BC8',
+  oasys: '0xfb6f8FEdE0Cb63674Ab964affB93D65a4a7D55eA',
 };
 
 function forNetwork(addressByNetwork: AddressByNetwork, network: string): Address {
@@ -70,6 +74,10 @@ function forNetwork(addressByNetwork: AddressByNetwork, network: string): Addres
     return Address.fromString(addressByNetwork.defiverse);
   } else if (network == 'defiverse_testnet') {
     return Address.fromString(addressByNetwork.defiverse_testnet);
+  } else if (network == 'oasys_testnet') {
+    return Address.fromString(addressByNetwork.oasys_testnet);
+  } else if (network == 'oasys') {
+    return Address.fromString(addressByNetwork.oasys);
   } else {
     return Address.fromString(addressByNetwork.dev);
   }

@@ -1,18 +1,34 @@
 {
   "stableAssets": [
     {
-      "address": "0x8299f293ea0de5eda67ed75aad6e9c4a2b063837",
+      "address": "0x7c6b91d9be155a6db01f749217d76ff02a7227f2",
       "symbol": "USDC"
+    },
+    {
+      "address": "0xd08a2917653d4e460893203471f0000826fb4034",
+      "symbol": "USDT"
     }
   ],
   "pricingAssets": [
     {
-      "address": "0xEB7638A7c4eAEb25ECe59F4382b9f06a8056F980",
+      "address": "0x4362Be024eFbb8C6fBcF19675224b58dFd2493Ef",
+      "symbol": "bCCP"
+    },
+    {
+      "address": "0x5a89E11Cb554E00c2f51C4bb7F05bc7Ab0Fa6351",
+      "symbol": "WOAS"
+    },
+    {
+      "address": "0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000",
+      "symbol": "OAS"
+    },
+    {
+      "address": "0xE7798f023fC62146e8Aa1b36Da45fb70855a77Ea",
       "symbol": "WETH"
     },
     {
-      "address": "0xA3496414a9900A9AE5960C1fEC30e563213b68bE",
-      "symbol": "DFV"
-    }
+      "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+      "symbol": "WBTC"
+    }    
   ]
 }

@@ -412,28 +412,56 @@ gnosis:
 defiverse:
   network: defiverse
   EventEmitter:
-    address: "0x58530C4eC9CED16371e12e53f2E37c3E3F3e1a6b"
-    startBlock: 10
+    address: "0x777d31d85CD564F62d04bd297Ee0Cf76230357d1"
+    startBlock: 87620
   Vault:
-    address: "0xef570b45a20e9bDe7855BDF5940Be3ac17B4c610"
-    startBlock: 700
+    address: "0x2FA699664752B34E90A414A42D62D7A8b2702B85"
+    startBlock: 87620
   WeightedPoolV3Factory:
-    address: "0x8c96Ab92be9a17F6DB66bB254c31DD0C263eA81A"
-    startBlock: 700
+    address: "0xE952b0409e6768E270A671ebbC5b8605a7C5A0B8"
+    startBlock: 87649
   ComposableStablePoolV3Factory:
-    address: "0x42DD917a3C8A14a766712Fabe7B048f0306246F6"
-    startBlock: 700
+    address: "0xD01ad3085fb3e1fbB2541b5B3326B1F47B189747"
+    startBlock: 87650
 defiverse_testnet:
   network: defiverse_testnet
   EventEmitter:
     address: "0x4C7Be8e1Be27f5bb46775F9859ecF6DC03C1f922"
     startBlock: 9742
   Vault:
-    address: "0xa6935aBb1D57e8BA6fa2663f9d067777CA712ECd"
-    startBlock: 9742
+    address: "0x2Da016a77E290fb82F5af7051198304d57779f5d"
+    startBlock: 12766
   WeightedPoolV3Factory:
-    address: "0xA557d50933deAA3F9b0bbAe1b7eF40D889434EB2"
-    startBlock: 9751
+    address: "0xaB6BaC0f5F4C7C166C5234B528a1cD46Fbcb9F4B"
+    startBlock: 12766
   ComposableStablePoolV3Factory:
-    address: "0x5Fb8142cF2D5283D56241bdfB676e05A6AF99724"
-    startBlock: 9752
+    address: "0x58e6F99bB65378f47A520fC9630Bd711f2cf3Dc7"
+    startBlock: 12766
+oasys_testnet:
+  network: oasys_testnet
+  EventEmitter:
+    address: "0xd5F16855DdA9aD8b26FFdc99Da982C32aa01b7Ac"
+    startBlock: 4097708
+  Vault:
+    address: "0x1f7a0Bea1CB70FaA0f6b7B1126eCbd01Ef4E5BC8"
+    startBlock: 4097708
+  WeightedPoolV3Factory:
+    address: "0x900c1Bc6a6915Ed153c18763e4B8aE8133E839f1"
+    startBlock: 4097708
+  ComposableStablePoolV3Factory:
+    address: "0xfDA8fa80dd77A99BF71BeCFce47077859e689898"
+    startBlock: 4097708
+oasys:
+  network: oasys
+  EventEmitter:
+    address: "0xad8Eb7CF8A55d5F62f361adB4bcabe6d2012a2C7"
+    startBlock: 4523079
+  Vault:
+    address: "0xfb6f8FEdE0Cb63674Ab964affB93D65a4a7D55eA"
+    startBlock: 4523079
+  WeightedPoolV3Factory:
+    address: "0x5737600b98E7F1cf98dAca2a36bCa22C974370b0"
+    startBlock: 4835655
+  ComposableStablePoolV3Factory:
+    address: "0x0A7A98c9553192755f22b282278f0FA26f4de742"
+    startBlock: 4835655

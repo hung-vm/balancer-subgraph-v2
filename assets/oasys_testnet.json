@@ -1,0 +1,22 @@
+{
+  "stableAssets": [
+    {
+      "address": "0x2Af09148C7BF784e54C7730724E4b48e4735426C",
+      "symbol": "USDC"
+    },
+    {
+      "address": "0xaCB7A8e74a9f09735feCE0176fCfb0591d801A77",
+      "symbol": "USDT"
+    }
+  ],
+  "pricingAssets": [
+    {
+      "address": "0x5200000000000000000000000000000000000001",
+      "symbol": "WOAS"
+    },
+    {
+      "address": "0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000",
+      "symbol": "OAS"
+    }
+  ]
+}

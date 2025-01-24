@@ -10,13 +10,24 @@
     "deploy": "graph deploy balancer-labs/balancer-v2 --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
     "deploy:local": "graph deploy balancer-labs/balancer-v2 subgraph.dockerParity.yaml --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020",
 
-    "create:defiverse": "graph create balancer-labs/defiverse --node http://13.212.29.220:8020",
-    "deploy:defiverse": "graph deploy balancer-labs/defiverse subgraph.defiverse.yaml --ipfs http://13.212.29.220:5001 --node http://13.212.29.220:8020",
-    "remove:defiverse": "graph remove balancer-labs/defiverse --node http://13.212.29.220:8020",
+    "create:defiverse": "graph create balancer-labs/defiverse --node http://13.212.69.154:8020",
+    "deploy:defiverse": "graph deploy balancer-labs/defiverse subgraph.defiverse.yaml --ipfs http://13.212.69.154:5001 --node http://13.212.69.154:8020",
+    "remove:defiverse": "graph remove balancer-labs/defiverse --node http://13.212.69.154:8020",
 
-    "create:defiverse_testnet": "graph create balancer-labs/defiverse-testnet --node http://13.250.65.26:8020",
-    "deploy:defiverse_testnet": "graph deploy balancer-labs/defiverse-testnet subgraph.defiverse_testnet.yaml  --ipfs http://13.250.65.26:5001 --node http://13.250.65.26:8020",
-    "remove:defiverse_testnet": "graph remove balancer-labs/defiverse-testnet --node http://13.250.65.26:8020",
+    "create:defiverse_testnet": "graph create balancer-labs/defiverse-testnet-v2 --node http://13.250.65.26:8020",
+    "deploy:defiverse_testnet": "graph deploy balancer-labs/defiverse-testnet-v2 subgraph.defiverse_testnet.yaml  --ipfs http://13.250.65.26:5001 --node http://13.250.65.26:8020",
+    "remove:defiverse_testnet": "graph remove balancer-labs/defiverse-testnet-v2 --node http://13.250.65.26:8020",    
+
+    "create:oasys_testnet": "graph create balancer-labs/oasys-testnet --node http://13.212.249.120:18020",
+    "deploy:oasys_testnet": "graph deploy balancer-labs/oasys-testnet subgraph.oasys_testnet.yaml  --ipfs http://13.212.249.120:5001 --node http://13.212.249.120:18020",
+    "remove:oasys_testnet": "graph remove balancer-labs/oasys-testnet --node http://13.212.249.120:18020",    
+
+    "generate-assets:oasys": "ts-node ./scripts/generate-assets oasys",
+    "generate-manifests:oasys": "ts-node ./scripts/generate-manifests oasys",
+
+    "create:oasys": "graph create balancer-labs/oasys --node http://18.139.226.108:18020",
+    "deploy:oasys": "graph deploy balancer-labs/oasys subgraph.oasys.yaml  --ipfs http://18.139.226.108:5001 --node http://18.139.226.108:18020",
+    "remove:oasys": "graph remove balancer-labs/oasys --node http://18.139.226.108:18020",    
     
     "import-abis": "ts-node ./scripts/update-abis.ts",
     "generate-assets": "ts-node ./scripts/generate-assets",
@@ -26,8 +37,12 @@
     "update-addresses:local": "yarn update-addresses dockerParity",
     "update-addresses:defiverse": "yarn update-addresses defiverse",
     "update-addresses:defiverse_testnet": "yarn update-addresses defiverse_testnet",
+    "update-addresses:oasys_testnet": "yarn update-addresses oasys_testnet",
+    "update-addresses:oasys": "yarn update-addresses oasys",
     "sync": "yarn import-abis && yarn update-addresses:defiverse && yarn codegen && yarn build",
     "sync:defiverse_testnet": "yarn import-abis && yarn update-addresses:defiverse_testnet && yarn codegen && yarn build",
+    "sync:oasys_testnet": "yarn import-abis && yarn update-addresses:oasys_testnet && yarn codegen && yarn build",
+    "sync:oasys": "yarn import-abis && yarn update-addresses:oasys && yarn codegen && yarn build",
     "sync:local": "yarn import-abis && yarn update-addresses dockerParity && yarn codegen && yarn build"
   },
   "devDependencies": {
